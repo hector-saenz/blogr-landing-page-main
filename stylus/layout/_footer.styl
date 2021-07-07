@@ -1,0 +1,59 @@
+.footer
+    margin 8rem 0 0
+    padding 8rem 0
+    height auto
+    width 100%
+    border-radius 0 100px 0 0
+    background-color color-neutral-footer-background
+    &__logo
+        display block
+        margin 0 auto
+    &__subtitle
+        margin 8rem auto 0
+        color color-neutral-text
+        font-size 1.8rem
+        font-family font-secondary
+        text-align center
+    &__text
+        display block
+        margin 1rem 0 0 
+        color color-neutral-footer-text
+        font-size 1.8rem
+        font-family font-secondary
+        text-align center
+        text-decoration none
+    &__subtitle + &__text
+        margin 3rem 0 0
+
+@media screen and (min-width: 52.125rem)
+    .footer
+        display flex
+        padding 5rem 10rem
+        &__logo
+            vertical-align top
+            display inline-block
+            height max-content
+        &__options-container
+            flex 1
+            display flex
+            justify-content space-around
+        &__product
+            vertical-align top
+            display inline-block
+        &__company
+            vertical-align top
+            display inline-block
+        &__connect
+            vertical-align top
+            display inline-block
+        &__subtitle
+            margin 0
+            text-align start
+        &__text
+            text-align start
+        &__text:hover
+            text-decoration underline
+
+@media screen and (min-width: 63.75rem)
+    .footer
+        padding-right 25rem

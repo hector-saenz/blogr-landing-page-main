@@ -1,0 +1,32 @@
+.active
+    display block
+    opacity 1
+    visibility visible
+
+.icon-desktop
+    display none
+
+.icon-mobile
+    display inline-block
+
+.rotated
+    transform: rotate(180deg)
+
+.wrapper
+    display block
+    margin 0 auto
+    width 90%
+
+@media screen and (min-width: 52.125rem)
+    .wrapper
+        width 80%
+    
+    .flex
+        display flex
+        justify-content space-between
+
+    .icon-desktop
+        display inline-block
+
+    .icon-mobile
+        display none

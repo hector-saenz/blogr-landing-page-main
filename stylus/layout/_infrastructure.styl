@@ -1,0 +1,87 @@
+.infrastructure-information
+    position relative
+    margin 28rem 0 0 0
+    width 100%
+    height 60rem
+    background linear-gradient(to bottom, color-gradient-body, color-gradient-body-desaturated)
+    border-radius 0 100px 0 100px
+    &__background-image-container
+        width inherit
+        height inherit
+        background url('../../images/bg-pattern-circles.svg')
+        background-position 50% -8rem
+        background-repeat no-repeat
+        background-size cover
+        border-radius inherit
+    &__image-phones
+        position absolute
+        top -19rem
+        left calc(50% - 18.75rem)
+        width 37.5rem
+    &__title
+        position absolute
+        top 20rem
+        left calc(50% \- 15rem)
+        width 30rem
+        color color-neutral-text
+        font-size 3.5rem
+        text-align center
+    &__text
+        position absolute
+        top 31rem
+        left calc(50% - 15rem)
+        width 30rem
+        color color-neutral-text
+        text-align center
+        line-height 1.7
+
+@media screen and (min-width: 37.5rem)
+    .infrastructure-information
+        &__image-phones
+            width 45rem
+            left calc(50% - 22.5rem)
+        &__title
+            top 28rem
+            font-size 4rem
+        &__text
+            top 40rem
+            left calc(50% - 20rem)
+            width 40rem
+
+@media screen and (min-width: 67.5rem)
+    .infrastructure-information
+        height 41rem
+        &__background-image-container
+            background-position -23rem -55rem
+            background-size 100%
+        &__image-phones
+            top -5rem
+            left 5rem
+        &__title
+            top 10rem
+            left 50rem
+            width auto
+        &__text
+            top 17rem
+            left 50rem
+            width 50rem
+            text-align start
+
+@media screen and (min-width: 80rem)
+    .infrastructure-information
+        &__image-phones
+            width max-content
+            top -7rem
+        &__title
+            left 65rem
+        &__text
+            left 65rem
+
+@media screen and (min-width: 90rem)
+    .infrastructure-information
+        &__image-phones
+            left 10rem
+        &__title
+            left 70rem
+        &__text
+            left 70rem

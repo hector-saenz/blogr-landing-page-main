@@ -1,0 +1,58 @@
+.additional-information
+    margin 3rem auto 0
+    &__image-laptop-desktop
+        display none
+    &__image-laptop-mobile
+        display block
+        margin 0 auto
+        width 100%
+        max-width max-content
+    &__subtitle
+        margin 5rem auto 0
+        width 70%
+        color color-primary-headings
+        font-size 2.5rem
+        text-align center
+    &__text
+        margin 2rem auto 0
+        width 90%
+        color color-neutral-body-copy
+        text-align center
+        line-height 1.7
+        letter-spacing 1px
+
+@media screen and (min-width: 67.5rem)
+    .additional-information
+        display flex
+        margin 10rem 0 0
+        &__graphic
+            width 50%
+        &__image-laptop-desktop
+            position relative
+            left -23rem
+            display block
+            width 80rem
+        &__image-laptop-mobile
+            display none
+        &__description
+            width 50%
+        &__subtitle
+            margin 5rem 0 0
+            text-align start
+        &__subtitle:first-of-type
+            margin-top 10rem
+        &__text
+            margin 3rem 0 0
+            text-align start
+
+@media screen and (min-width: 80rem)
+    .additional-information
+        &__graphic
+            width 55%
+        &__image-laptop-desktop
+            left -25rem
+            width 90rem
+        &__description
+            width 45%
+        &__subtitle:first-of-type
+            margin-top 18rem

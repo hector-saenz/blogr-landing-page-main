@@ -1,0 +1,58 @@
+.design-information
+    display flow-root
+    &__title
+        margin 10rem 0 0 0
+        color color-primary-headings
+        font-size 2.5rem
+        text-align center
+    &__container
+        display flex
+        flex-direction column-reverse
+        overflow hidden
+    &__image-editor-mobile
+        display block
+        margin 3rem auto 0
+        width 100%
+        max-width max-content
+    &__image-editor-desktop
+        display none
+    &__subtitle
+        margin 5rem auto 0
+        width 70%
+        color color-primary-headings
+        font-size 2.5rem
+        text-align center
+    &__text
+        margin 2rem auto 0
+        width 90%
+        color color-neutral-body-copy
+        text-align center
+        line-height 1.7
+        letter-spacing 1px
+
+@media screen and (min-width: 67.5rem)
+    .design-information
+        &__title
+            font-size 3rem
+        &__container
+            position relative
+            padding 0 10%
+        &__description
+            width 40%
+        &__subtitle
+            margin 5rem 0 0
+            width max-content
+            text-align start
+        &__text
+            margin 2rem 0 0
+            width auto
+            text-align start
+        &__graphic
+            position absolute
+            top -8rem
+            right -20rem
+        &__image-editor-mobile
+            display none
+        &__image-editor-desktop
+            display block
+            height 70rem
